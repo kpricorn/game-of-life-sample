@@ -21,7 +21,7 @@ require.config({
     modernizr: '../bower_components/modernizr/modernizr',
     'requirejs-text': '../bower_components/requirejs-text/text',
     requirejs: '../bower_components/requirejs/require',
-    paper: '../bower_components/paper/dist/paper-full',
+    paper: '../bower_components/paper/dist/paper-core',
     'game-of-life': '../bower_components/game-of-life/dist/game-of-life',
     lodash: '../bower_components/lodash/dist/lodash'
   }
