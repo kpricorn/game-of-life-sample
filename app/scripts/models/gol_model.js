@@ -5,6 +5,7 @@ define([
        'game-of-life'
 ], function(_, Backbone, Game){
   var SEEDS = {
+    empty: [],
     oscilator: [
       [0, 0],
       [-1, 0],
@@ -80,7 +81,7 @@ define([
     },
 
     initializeGame: function(seed) {
-      seed = seed || SEEDS['oscilator'];
+      seed = seed || SEEDS['empty'];
       this.game = new Game.Game();
       _(seed).each(function(coords) {
         this.game.set(coords[0], coords[1]);
@@ -90,7 +91,6 @@ define([
     initialize: function() {
       this.reset();
 
-      this.game.set(1, 5);
       (function(model) {
         window.setInterval(function() {
           model.tick();
