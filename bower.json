@@ -9,7 +9,7 @@
     "requirejs-text": "~2.0.5",
     "modernizr": "~2.6.2",
     "paper": "~0.9.9",
-    "game-of-life": "kpricorn/game-of-life#~0.0.11",
+    "game-of-life": "kpricorn/game-of-life",
     "lodash": "~2.0.0"
   },
   "devDependencies": {}
